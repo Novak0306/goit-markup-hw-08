@@ -1,0 +1,39 @@
+.studia_link{
+    padding-top: 32px;
+    padding-bottom: 32px;
+    display: inline-block;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 16px;
+    letter-spacing: 0.02em;
+    color: $title-text-color;
+    transition: color $transition;
+
+    &:focus,
+    &:hover {
+        color: $accent-color;
+    }
+}
+
+.current_link {
+    position: relative;
+    display: inline-block;
+    color: $accent-color;
+    padding-top: 32px;
+    padding-bottom: 32px;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 16px;
+    letter-spacing: 0.02em;
+ 
+    &::after {
+    content: '';
+    position: absolute;
+    left: 0;
+    width: 100%;
+    background-color: #2196F3;
+    border-radius: 2px;
+    height: 4px;
+    bottom: 0px;
+   }
+}

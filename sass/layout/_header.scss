@@ -1,0 +1,24 @@
+.top-line {
+    display: flex;
+    align-items: center;
+    width: 1600px;
+    border-bottom: 1px solid #ECECEC;
+   }
+
+.nav-list {
+    margin-left: 85px;
+    display: flex;
+
+    & .item+ .item {
+        margin-left: 50px;
+    }
+ }
+
+.address-nav {
+    display: flex;
+    margin-left: auto;
+    
+    & .item+.item {
+        margin-left: 30px;
+    }
+}

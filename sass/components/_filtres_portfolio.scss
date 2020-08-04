@@ -1,0 +1,41 @@
+.filtres_portfolio {
+    justify-content: center;
+    display: flex;
+    align-items: center;
+    margin-bottom: 50px;
+
+    & .item+.item {
+        margin-left: 8px;
+    }
+}
+
+.filtres_portfolio_button {
+    padding: 6px 22px;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 26px;
+    text-align: center;
+    letter-spacing: 0.03em;
+    color: $title-text-color;
+    background: #F5F4FA;
+    border-radius: 4px;
+    border: 0px;
+    transition: background-color $transition,
+                color $transition;
+                
+    &:hover,
+    &:focus {
+        font-weight: 500;
+        font-size: 16px;
+        line-height: 26px;
+        text-align: center;
+        letter-spacing: 0.03em;
+        color: $white-color;
+        background-color: $accent-color;
+        border-radius: 4px;
+        border: 0px;
+        cursor: pointer;
+        box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.12), 0px 1px 2px rgba(0, 0, 0, 0.08), 0px 3px 1px rgba(0, 0, 0, 0.1);
+                    
+        }
+}
