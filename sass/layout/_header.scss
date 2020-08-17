@@ -1,24 +1,64 @@
 .top-line {
-    display: flex;
-    align-items: center;
-    width: 1600px;
-    border-bottom: 1px solid #ECECEC;
+   
+ border-bottom: 1px solid #ECECEC;
+
+    @media screen and (min-width: 480px) {
+        width: 480px;
+      }
+    
+      @media screen and (min-width: 768px) {
+        width: 768px;
+      }
+    
+      @media screen and (min-width: 1280px) {
+        width: 1280px;
+      }
+
    }
 
+ 
+
+
 .nav-list {
+   
     margin-left: 85px;
-    display: flex;
+
 
     & .item+ .item {
         margin-left: 50px;
     }
+
+    @media screen and (max-width: 480px) {
+        display: none;
+        width: 480px;
+      }
+    
+      @media screen and (min-width: 768px) {
+        width: 768px;
+      }
+    
+      @media screen and (min-width: 1280px) {
+        width: 1280px;
+      }
  }
 
 .address-nav {
-    display: flex;
+ 
     margin-left: auto;
     
     & .item+.item {
         margin-left: 30px;
     }
+
+    @media screen and (min-width: 480px) {
+        width: 480px;
+      }
+    
+      @media screen and (min-width: 768px) {
+        width: 768px;
+      }
+    
+      @media screen and (min-width: 1280px) {
+        width: 1280px;
+      }
 }
